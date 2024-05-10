@@ -67,9 +67,31 @@
             </div>
         </div>
     </div>
-
+</div>
+<!-- Services Section -->
+<div id="services">
+   <div class="container">
+       <h1 class="sub-title">My Services</h1>
+       <div class="services-list">
+        <div>
+            <h2>Web Design</h2>
+            <p>I create professional websites that are visually appealing and user-friendly.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <h2>Web Development</h2>
+            <p>I create web applications that are fast, responsive, and easy to use.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <h3>SEO</h3>
+            <p>I optimize websites for search engines to improve their visibility and ranking.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div> 
+</div>
     <script>
-        var tablinks = document.getElementsByClassName("tab-liinks");
+        var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
         function opentab(tabname){
@@ -79,6 +101,8 @@
             for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
 
 
