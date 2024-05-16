@@ -14,7 +14,7 @@
         <nav>
             <!---- <p class="logo">Eissa Monet</p> --->
             <ul id="sidemenu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -147,9 +147,9 @@
                 <a href="assets/images/resume" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right"></div>
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder=" Your Name" required>
-                    <input type="email" name ="email" placeholder="Your Email" required>
+                    <input type="email" name ="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
                     <button type="send" class="btn btn2">Send</button>
                 </form>
@@ -188,7 +188,17 @@
         sidemenu.style.right = "-200px";
     }
 </script>
-
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4k-tE0AogNkQVGbMDp9y-ku8L6c5rejbupRNe91UB_umc5B9cIVpF5V_zKooyNJFqmA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 
 </body>
