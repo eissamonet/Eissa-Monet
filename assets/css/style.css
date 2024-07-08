@@ -89,7 +89,8 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 40px;
+    font-style: italic;
     font-weight: 600;
     color: white;
 }
