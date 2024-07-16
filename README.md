@@ -21,9 +21,9 @@ I am an ambitious junior software developer with a distinctive background in med
 
 ## Projects
 
-- [Project 1](https://vercel.com/eissa-monets-projects/weather-app)
-- [Project 2](https://vercel.com/eissa-monets-projects/random-password-generator)
-- [Project 3](https://github.com/jmcshan1/Meal-Kit-Store)
+- [Weather App](https://vercel.com/eissa-monets-projects/weather-app)
+- [Random Password Generator](https://vercel.com/eissa-monets-projects/random-password-generator)
+- [Meal-Kit](https://github.com/jmcshan1/Meal-Kit-Store)
 
 
 ## Contact Information
