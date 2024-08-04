@@ -11,13 +11,7 @@ body{
     background: black;
     color: white;
 }
-/*#header{
-    width: 50%;
-    height: 100vh;
-    background-image: url(assets/images/Skyline.jpg);
-    background-size:cover;
-    background-position: center;
-}*/
+
 .container{
     padding: 10px 10%;
 }
@@ -92,7 +86,7 @@ nav ul li a:hover::after{
     font-size: 40px;
     font-style: italic;
     font-weight: 600;
-    color: white;
+    color: #ff004f;
 }
 .tab-titles{
     display: flex;
@@ -248,9 +242,7 @@ nav ul li a:hover::after{
 }
 
 /*------------------Contact Section----------------- */
-.contact-left{
-    flex-basis: 35%;
-}
+
 .contact-right{
     flex-basis: 60%;
 }
@@ -283,7 +275,7 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 .contact-right form{
-    width: 100%;
+    width: 50%;
 }
 form input, form textarea{
     width: 100%;
