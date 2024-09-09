@@ -57,7 +57,9 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
-    color: #ff004f;
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ------------------About Section----------------- */
@@ -76,7 +78,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50px;
 }
 .about-col-2{
     flex-basis: 60%;
