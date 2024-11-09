@@ -38,7 +38,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -57,7 +57,8 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
-    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -128,6 +129,11 @@ nav ul li a:hover::after{
     color: #ff004f;
     font-size: 14px;
 }
+.tab-contents ul li p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+}
 .tab-contents{
     display: none;
 }
@@ -169,7 +175,7 @@ nav ul li a:hover::after{
     display:inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     transform: translateY(-10px);
 }
 /*------------------Portfolio Section----------------- */
